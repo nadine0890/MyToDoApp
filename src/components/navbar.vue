@@ -1,16 +1,11 @@
 <template>
-  <div class="navbar">
-    <h1>This is my navbar!</h1>
-    <RouterLink to="/">MyData</RouterLink>
-    <RouterLink to="/auth">Sign</RouterLink>
-    
+ 
     <div id="navbar">
-      <a href="#" class="active">My Data</a>
-      <a href="#">My Lists</a>
-      <a href="#">My Tasks</a>
+      <RouterLink to="/">My Data</RouterLink>
+      <RouterLink to="/tasks">My Tasks</RouterLink>
       <button id="userButton2" @click="$router.push('/auth')">Sign Up/Sign In</button>
     </div>
-    </div>
+   
 </template>
 
 <script>
